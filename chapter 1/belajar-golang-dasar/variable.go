@@ -16,4 +16,12 @@ func main(){
 
   carType := "Maclaren"
   fmt.Println(carType)
+
+  var (
+    firstName = "Taufiqurrahman"
+    middleName = "Hafiidh"
+    lastName = "Datau"
+  )
+
+  fmt.Println(firstName, middleName, lastName)
 }
