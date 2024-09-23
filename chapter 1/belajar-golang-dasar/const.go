@@ -3,12 +3,12 @@ package main
 import "fmt"
 
 func main(){
-  const radius float32 = 4
-  const pi float32 = 3.14
-  const circumferenc float32 = 2*radius*pi
+  const radius float32 = 5.0
 
+  const(
+    pi = 3.14
+    circumferenc = 2*pi*radius
+  )
   fmt.Println(circumferenc)
 
-  //error
-  radius = 2
 }
