@@ -35,4 +35,8 @@ func main(){
 
   //mengubah data array[index] = value
   grades[3] = "X"
+
+  //BUG
+  //di golang tidak ada istilah menghapus data array
+  //mungkin hanya mengisi data kosong saja
 }
