@@ -13,7 +13,7 @@ func main(){
   //Capacity adalah kapasitas dari slicenya
   
   //membuat slice dari array
-  var nilai = []int{1,2,3,4,5}
+  var nilai = [5]int{1,2,3,4,5}
   
   var slice1 = nilai[0:3]
   fmt.Println(slice1)
@@ -31,4 +31,9 @@ func main(){
   nilai[3] = 100
   fmt.Println(slice4)
   //hal ini dikarenakan slice mereference array yang sama dengan array
+
+  //untuk mendeklarasikan slice sama seperti array tapi tidak menuliskan lengthnya
+  var namaSiswa []string
+
+  fmt.Println(namaSiswa)
 }
