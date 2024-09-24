@@ -23,4 +23,15 @@ func main(){
 
   a%=4
   fmt.Println(a)
+
+  a++
+  fmt.Println(a)
+
+  a--
+  fmt.Println(a)
+
+  fmt.Println(10>11)
+  fmt.Println("abc" == "abc")
+  fmt.Println("abc" > "a")
+  
 }
