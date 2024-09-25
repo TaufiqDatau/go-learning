@@ -44,7 +44,8 @@ func main(){
   fmt.Println(namaSiswa, "ini adalah array sebelum di append")
 
 
-  var newSlice = make([]string,3, 5)
+  //make(type, int length, int capacity)
+  var newSlice = make([]string,3, 5) //declaring new slice
 
   fmt.Println(newSlice)
   
