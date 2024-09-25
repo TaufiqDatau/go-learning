@@ -50,8 +50,15 @@ func main(){
   fmt.Println(newSlice)
   
   newSlice = append(newSlice,"data1")
+  referenceSlice := newSlice[0:1]
+  referenceSlice[0]="test"
+  fmt.Println(newSlice, "1")
   newSlice = append(newSlice, "new Data") // capacity = 5
+  referenceSlice[0] ="baru test"
+  fmt.Println(newSlice, "2")
   newSlice = append(newSlice, "newer data") // capacity = 10 
+  referenceSlice[0] = "should in different memory"
+  fmt.Println(newSlice,"3")
 
   fmt.Println(cap(newSlice))
   fmt.Println(len(newSlice))
