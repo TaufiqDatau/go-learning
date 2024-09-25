@@ -36,4 +36,29 @@ func main(){
   var namaSiswa []string
 
   fmt.Println(namaSiswa)
+
+
+  namaSiswa2 := append(namaSiswa,"Aldy") //mencreate address baru untuk namaSiswa dan melepaskan yang lama 
+
+  fmt.Println(namaSiswa2, "Ini adalah data setelah di append")
+  fmt.Println(namaSiswa, "ini adalah array sebelum di append")
+
+
+  var newSlice = make([]string,3, 5)
+
+  fmt.Println(newSlice)
+  
+  newSlice = append(newSlice,"data1")
+  newSlice = append(newSlice, "new Data") // capacity = 5
+  newSlice = append(newSlice, "newer data") // capacity = ?
+
+  fmt.Println(cap(newSlice))
+  fmt.Println(len(newSlice))
+
+
+  newSlice[0] = "data2"
+  newSlice[1] = "data3"
+  newSlice[2] = "data4"
+  fmt.Println(newSlice)
+
 }
