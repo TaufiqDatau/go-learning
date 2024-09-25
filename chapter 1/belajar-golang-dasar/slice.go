@@ -51,7 +51,7 @@ func main(){
   
   newSlice = append(newSlice,"data1")
   newSlice = append(newSlice, "new Data") // capacity = 5
-  newSlice = append(newSlice, "newer data") // capacity = ?
+  newSlice = append(newSlice, "newer data") // capacity = 10 
 
   fmt.Println(cap(newSlice))
   fmt.Println(len(newSlice))
