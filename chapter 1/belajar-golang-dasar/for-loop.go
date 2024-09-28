@@ -12,6 +12,7 @@ func main(){
     counter++
   }
 
+  //TODO: Add explanatory comment 
   lsStudent := []string{"Marc","Cathy","Ridel","Nicole","Raya"}
 
   for _,name := range lsStudent {
