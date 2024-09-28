@@ -37,4 +37,16 @@ func main(){
   runeArr := getAllChar("Aqira")
   fmt.Println(runeArr)
   fmt.Println(totalSum(1,2,3,4,5,6,7,8))
+
+  //If we already declared as array we can do this to a variadic function
+
+  var listOfNumbers []int
+  listOfNumbers = append(listOfNumbers, 10)
+  listOfNumbers = append(listOfNumbers, 10)
+  listOfNumbers = append(listOfNumbers, 10)
+  listOfNumbers = append(listOfNumbers, 10)
+  listOfNumbers = append(listOfNumbers, 10)
+
+  fmt.Println(listOfNumbers)
+  fmt.Println(totalSum(listOfNumbers...))
 }
