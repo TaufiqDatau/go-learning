@@ -41,10 +41,15 @@ func main(){
   //If we already declared as array we can do this to a variadic function
 
   var listOfNumbers []int
+  fmt.Println(cap(listOfNumbers), "Capacity of empty integer slice")
   listOfNumbers = append(listOfNumbers, 10)
+  fmt.Println(cap(listOfNumbers), "Capacity of 1 integer slice")
   listOfNumbers = append(listOfNumbers, 10)
+  fmt.Println(cap(listOfNumbers), "Capacity of 2 integer slice")
   listOfNumbers = append(listOfNumbers, 10)
+  fmt.Println(cap(listOfNumbers), "Capacity of 3 integer slice")
   listOfNumbers = append(listOfNumbers, 10)
+  fmt.Println(cap(listOfNumbers), "Capacity of 4 integer slice")
   listOfNumbers = append(listOfNumbers, 10)
 
   fmt.Println(listOfNumbers)
