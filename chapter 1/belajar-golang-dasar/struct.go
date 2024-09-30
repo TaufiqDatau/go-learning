@@ -5,7 +5,10 @@ import (
 	"time"
 )
 
-
+type animal interface{
+  sound() string;
+  numberOfLeg() int;
+}
 
 type Cat struct{
   name string;
@@ -16,6 +19,18 @@ type Cat struct{
 func (c Cat) getBirthYear(){
   currentYear := time.Now().Year()
   fmt.Println(c.name, "is born in", currentYear - int(c.age))
+}
+
+func getTheAnimaSound(a animal){
+  fmt.Println("This animal have this sound", a.sound())
+}
+
+func (c Cat) sound() string{
+  return "Meow"
+}
+
+func (c Cat) numberOfLeg() int{
+  return 4
 }
 
 func main(){
@@ -31,4 +46,6 @@ func main(){
   fmt.Println(tommy.breed)
 
   tommy.getBirthYear()
+
+  getTheAnimaSound(tommy)
 }
