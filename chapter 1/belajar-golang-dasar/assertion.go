@@ -11,7 +11,6 @@ func main(){
   var resultString string = result.(string) // Type Assertion
   fmt.Println(resultString)
 
-
   //better way to do type assertion 
   switch value := result.(type){
   case string :
